@@ -41,14 +41,3 @@ def textToArray(inputText):
         ciphertextArr.append((int(x), int(y)))
 
     return(ciphertextArr)
-
-input_message = 'THORIQ'
-kunci = 334
-
-# enkripsi
-ciphertext = encrypt(input_message, kunci)
-print("Ciphertext :", ciphertext)
-
-# dekripsi
-decryptedCt = decrypt(ciphertext, kunci)
-print("Decrypted Ciphertext :", decryptedCt)
